@@ -1,0 +1,16 @@
+pyrogram
+TgCrypto
+requests
+aiohttp
+pillow
+numpy
+beautifulsoup4
+fake_useragent
+gitpython
+heroku3
+filesplit
+filetype
+motor
+dnspython
+python-arq
+telegraph
