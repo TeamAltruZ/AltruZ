@@ -1,0 +1,60 @@
+{
+    "name": "AltruZ",
+    "description": "Simple and Light Weight Pyrogram Userbot",
+    "logo": "https://telegra.ph/file/52d9763835e1384f0a025.jpg",
+    "keywords": [
+        "AltruZ",
+        "Telegram UserBot",
+        "Best UserBot"
+    ],
+    "website": "https://t.me/TheAltruZ",
+    "repository": "https://github.com/TeamAltruZ/AltruZ",
+    "success_url": "https://t.me/AltruZChat",
+    "env": {
+        "APP_ID": {
+            "description": "Your APP_ID from my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API_HASH from my.telegram.org",
+            "required": true
+        },
+        "CMD_PREFIX": {
+            "description": "Command prefix",
+            "required": false,
+            "value": "."
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Your Heroku App Name",
+            "required": true
+        },
+        "HEROKU_API_KEY": {
+            "description": "Your Heroku API KEY",
+            "required": true
+        },
+        "MONGODB_URL": {
+            "description": "Your MongoDB Url. Get it from www.mongodb.com",
+            "required": true
+        },
+        "PYRO_STR_SESSION": {
+            "description": "Pyrogram String Session",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
