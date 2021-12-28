@@ -1,0 +1,1 @@
+altruz: bash startup.sh
