@@ -54,7 +54,7 @@ def altruz_on_cmd(
         altruz_filter = (filters.me & filters.command(command, Config.CMD_PREFIX) & ~filters.via_bot & ~filters.forwarded)
     else:
         altruz_filter = (filters.user(SUDO_IDS) & filters.command(command, Config.CMD_PREFIX) & ~filters.via_bot & ~filters.forwarded)
-    def decorate_alturz(func):
+    def decorate_altruz(func):
         async def x_wrapper(client, message):
             altruz_chat_type = message.chat.type
             if admins_only:
