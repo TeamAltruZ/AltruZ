@@ -18,7 +18,7 @@ Copyright (c) 2021 TeamAltruZ
     log_channel_id = await check_or_set_log_channel()
     await check_arq_api()
     try:
-        await ALTRUZ.send_message(chat_id=log_channel_id[1], text="Master, \n`AltruZ is now Online")
+        await ALTRUZ.send_message(chat_id=log_channel_id[1], text="Master, `AltruZ is now Online")
     except:
         print("WARNING: There was an error while creating the LOG_CHANNEL please add a one manually!")
     await idle()
