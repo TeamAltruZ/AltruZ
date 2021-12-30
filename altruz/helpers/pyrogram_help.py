@@ -155,7 +155,7 @@ async def convert_to_image(message, client) -> [None, str]:
 
 # Get Your Chats
 async def get_ma_chats():
-    nexaub_chats = []
+    altruz_chats = []
     async for dialog in ALTRUZ.iter_dialogs():
         if dialog.chat.type in ["channel", "supergroup"]:
             altruz_chats.append(dialog.chat.id)
