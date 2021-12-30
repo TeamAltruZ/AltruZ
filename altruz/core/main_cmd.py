@@ -22,7 +22,7 @@ sudos = log_cid_loop.run_until_complete(get_sudos())
 sudos.append("me")
 SUDO_IDS = sudos
 
-def add_handler(x_wrapper, nexaub_filter):
+def add_handler(x_wrapper, altruz_filter):
     ALTRUZ.add_handler(MessageHandler(x_wrapper, filters=altruz_filter), group=0)
 
 
@@ -97,7 +97,7 @@ Forward this to @AltruZChat
                     os.remove("error_altruz.txt")
                 else:
                     await ALTRUZ.send_message(chat_id=LOG_CHANNEL_ID, text=error_text)
-        add_handler(x_wrapper, nexaub_filter)
+        add_handler(x_wrapper, altruz_filter)
         return x_wrapper
     return decorate_altruz
 
