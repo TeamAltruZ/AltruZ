@@ -143,7 +143,7 @@ async def arq_trans(_, message: Message):
         tr_txt_file = open("translated_ALTRUZ.txt", "w+")
         tr_txt_file.write(translated_str)
         tr_txt_file.close()
-        await trans_msg.reply_document("translated_NEXAUB.txt")
+        await trans_msg.reply_document("translated_ALTRUZ.txt")
         os.remove("translated_ALTRUZ.txt")
         await trans_msg.delete()
     else:
