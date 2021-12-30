@@ -46,7 +46,7 @@ mod_file = os.path.basename(__file__)
 async def close_session(aiohtp_c):
     await aiohtp_c.close()
 
-async def ARQ_NEXAUB(
+async def ARQ_ALTRUZ(
     keyword,
     dest_lang="en",
     is_lyrics=False,
