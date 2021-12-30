@@ -64,7 +64,7 @@ async def ARQ_ALTRUZ(
         # === Now do stuff with arq === #
         # lyrics module
         if is_lyrics:
-            lyric = await arq_nexaub.lyrics(query=keyword)
+            lyric = await arq_altruz.lyrics(query=keyword)
             await close_session(arq_aiohttp)
             return lyric
         # Translator module
