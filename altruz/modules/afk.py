@@ -40,7 +40,7 @@ ya_afk = filters.create(func=u_afk_bro, name="is_ya_afk")
 
 @altruz_on_cmd(command="afk", modlue=mod_file)
 async def me_goin_oflin(_, message: Message):
-    afk_msg = await e_or_r(nexaub_message=message, msg_text="`Wait..`")
+    afk_msg = await e_or_r(altruz_message=message, msg_text="`Wait..`")
     afk_reason = get_arg(message)
     if not afk_reason:
         afk_reason = "I'm Busy For Now! I Will Come Online Later!"
