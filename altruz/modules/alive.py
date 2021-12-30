@@ -60,7 +60,7 @@ def get_readable_time(seconds: int) -> str:
 
 # Get current version of Altruz
 def get_alrruz_version():
-    with open("cache/nexaub_data.json", "r") as jsn_f:
+    with open("cache/altruz_data.json", "r") as jsn_f:
         ver = json.load(jsn_f)
         return ver["version"]
 
