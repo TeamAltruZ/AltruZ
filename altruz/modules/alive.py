@@ -58,8 +58,8 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
     return ping_time
 
-# Get current version of Nexa Userbot
-def get_nexaub_version():
+# Get current version of Altruz
+def get_alrruz_version():
     with open("cache/nexaub_data.json", "r") as jsn_f:
         ver = json.load(jsn_f)
         return ver["version"]
