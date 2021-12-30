@@ -60,7 +60,7 @@ async def ARQ_ALTRUZ(
         arq_api = await get_arq_key()
         if arq_api is None:
             return print("ARQ_API_KEY isn't in database. Add it and Try Again!")
-        arq_nexaub = ARQ(arq_url, arq_api, arq_aiohttp)
+        arq_altruz = ARQ(arq_url, arq_api, arq_aiohttp)
         # === Now do stuff with arq === #
         # lyrics module
         if is_lyrics:
@@ -74,7 +74,7 @@ async def ARQ_ALTRUZ(
             return transed.result
         # Wiki module
         if is_wiki:
-            wiki_s = await arq_nexaub.wiki(query=keyword)
+            wiki_s = await arq_altruz.wiki(query=keyword)
             await close_session(arq_aiohttp)
             return wiki_s.result
         # Reddit Module
