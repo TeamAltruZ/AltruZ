@@ -9,7 +9,7 @@ async def set_log_channel(tgcc_id):
     if p_log_c_id:
         return True
     else:
-        await altruz_conf.insert_one({"_id": "LOG_CHANNEL_ID", "nexaub_conf": log_chanel_id})
+        await altruz_conf.insert_one({"_id": "LOG_CHANNEL_ID", "altruz_conf": log_chanel_id})
 
 async def get_log_channel():
     log_channel = await nexaub_conf.find_one({"_id": "LOG_CHANNEL_ID"})
