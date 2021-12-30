@@ -5,7 +5,7 @@ altruz_gban = altruz_mongodb["gban_db"]
 # Database for storing gban details
 async def gban_usr(gban_id, gban_reason="Abusing People!"):
     gban_user_id = int(gban_id)
-    p_gbanned = await nexaub_gban.find_one({"gbanned_usr": gban_user_id})
+    p_gbanned = await altruz_gban.find_one({"gbanned_usr": gban_user_id})
     if p_gbanned:
         return True
     else:
