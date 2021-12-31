@@ -74,3 +74,4 @@ async def back_online_bois(_, message: Message):
     com_online = datetime.now().replace(microsecond=0)
     afk_time = str((com_online - s_time))
     await me_online()
+    await e_or_r(altruz_message=message, msg_text=f"**I'm No Longer AFK** \n\n**Afk Time:** `{afk_time}` \n**Reason:** `{a_reason}`")
