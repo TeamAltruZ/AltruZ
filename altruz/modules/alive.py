@@ -147,3 +147,4 @@ async def set_alive_pic(_, message: Message):
 async def egg_clc(_, message: Message):
     clc_func = await check_or_set_log_channel()
     lc_id = clc_func[1] if clc_func[1]  else None
+    await e_or_r(altruz_message=message, msg_text=f"**Is Log Channel Set?** `{clc_func[0]}` \n**Channel ID:** `{lc_id}`")
