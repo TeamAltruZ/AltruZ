@@ -58,7 +58,7 @@ async def updateme_requirements():
 
 @altruz_on_cmd(command="update", modlue=mod_file)
 async def upstream(client, message):
-    status = await e_or_r(nexaub_message=message, msg_text=f"`Checking For Updates from` [AltruZ]({UPSTREAM_REPO_URL})")
+    status = await e_or_r(altruz_message=message, msg_text=f"`Checking For Updates from` [AltruZ]({UPSTREAM_REPO_URL})")
     conf = get_arg(message)
     off_repo = UPSTREAM_REPO_URL
     txt = "`Oops! Updater Can't Continue...`"
@@ -167,7 +167,7 @@ async def upstream(client, message):
         return
 
 # Userbot restart module
-async def restart_nexaub():
+async def restart_altruz():
     if Config.HEROKU_API_KEY is not None:
         heroku_conn = heroku3.from_key(Config.HEROKU_API_KEY)
         server = heroku_conn.app(Config.HEROKU_APP_NAME)
