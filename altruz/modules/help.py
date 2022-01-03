@@ -1,7 +1,7 @@
 import os
 from pyrogram.types import Message
 
-from altruz import NEXAUB, HELP, CMD_HELP
+from altruz import ALTRUZ, HELP, CMD_HELP
 from config import Config
 from altruz.helpers.pyrogram_help import get_arg
 from altruz.core.main_cmd import altruz_on_cmd, e_or_r
