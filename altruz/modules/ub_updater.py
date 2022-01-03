@@ -182,7 +182,7 @@ async def restart(client, message):
     restart_msg = await e_or_r(altruz_message=message, msg_text="`Processing...`")
     await restart_msg.edit("`AltruZ is restarting! Please wait...`")
     try:
-        await restart_nexaub()
+        await restart_altruz()
     except Exception as e:
         await restart_msg.edit(f"**Error:** `{e}`")
 
