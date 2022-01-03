@@ -80,7 +80,7 @@ async def set_sudo(_, message: Message):
   if is_id_ok is True:
     await remove_sudo(sudo_user_id)
     await sudo_msg.edit(f"**Successfully Removed Sudo User** \n\n**User ID:** `{sudo_user_id}`")
-    await restart_nexaub()
+    await restart_altruz()
   else:
     await sudo_msg.edit("`Please give a valid user id to add as a sudo user`")
 
