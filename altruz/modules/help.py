@@ -13,7 +13,7 @@ HELP.update(
         "**⚡ Userbot**": "`alive`, `installer`, `updater`, `repo`",
         "**🔥 Animations": "`greetings`",
         "**👨‍💻 Dev**": "`eval`",
-        "**🗂 Modules**": "`paste`, `short_url`, `search`, `pictools`, `megatools`, `arq`, `telegraph`, `cloud`",
+        "**🗂 Modules**": "`paste`, `short_url`, `search`, `pictools`, `arq`, `telegraph`, `cloud`",
         "**📂 Database**": "`stickers`, `owner`, `sudos`, `afk`, `globals`, `groups`",
         "\n**Usage**": "`.help` [module_name]"
     }
