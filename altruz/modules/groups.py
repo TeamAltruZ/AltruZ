@@ -144,7 +144,7 @@ async def unpin_msg(_, message: Message):
   args = get_arg(message)
   if args and (args == "-all"):
     chat_id = message.chat.id
-    await NEXAUB.unpin_all_chat_messages(chat_id)
+    await ALTRUZ.unpin_all_chat_messages(chat_id)
     await unpin_msg.edit("`Successfully unpinned all pinned messages in this chat!`")
   else:
     if not r_msg:
