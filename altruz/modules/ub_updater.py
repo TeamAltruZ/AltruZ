@@ -93,7 +93,7 @@ async def upstream(client, message):
     if "now" not in conf:
         changelog = await gen_chlog(repo, diff=ac_br)
         if changelog:
-            req_ver = requests.get("https://raw.githubusercontent.com/TeamAltruZ/AltruZ/master/cache/altruz_data.json")
+            req_ver = requests.get("https://raw.githubusercontent.com/TeamAltruZ/AltruZ/main/cache/altruz_data.json")
             changelog_str = f"""
 **New Updates are available for AltruZ**
 `Branch:` [{ac_br}]({UPSTREAM_REPO_URL}/tree/{ac_br})
