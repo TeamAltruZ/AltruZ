@@ -59,7 +59,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 # Get current version of Altruz
-def get_alrruz_version():
+def get_altruz_version():
     with open("cache/altruz_data.json", "r") as jsn_f:
         ver = json.load(jsn_f)
         return ver["version"]
