@@ -25,6 +25,7 @@ CMD_HELP.update(
   ➥ `ping` - To Check Ping Speed
   ➥ `setalive` - To Set Custom Alive Message
   ➥ `getalive` - To Get current alive message
+  ➥ `repo` - To get Repository!
 **Example:**
   ➥ `setalive`,
    ⤷ Send with alive text = `{Config.CMD_PREFIX}setalive This is the alive text`
@@ -72,7 +73,7 @@ async def pyroalive(_, message: Message):
     alive_bef_msg = await e_or_r(altruz_message=message, msg_text="`Processing..`")
     # Alive Message
     get_alive_msg = await get_custom_alive_msg()
-    custom_alive_msg = get_alive_msg if get_alive_msg else "Heya, I'm Using Nexa Userbot"
+    custom_alive_msg = get_alive_msg if get_alive_msg else "Heya, I'm Using AltruZ"
     # Alive Pic
     get_alive_pic = await get_custom_var(var="ALIVE_PIC")
     alive_pic = get_alive_pic if get_alive_pic else "cache/AltruZ.jpg"
@@ -148,3 +149,8 @@ async def egg_clc(_, message: Message):
     clc_func = await check_or_set_log_channel()
     lc_id = clc_func[1] if clc_func[1]  else None
     await e_or_r(altruz_message=message, msg_text=f"**Is Log Channel Set?** `{clc_func[0]}` \n**Channel ID:** `{lc_id}`")
+
+
+@altruz_on_cmd(command="repo", modlue=mod_file)
+async def altruz_repo(client, message):
+    await e_or_r(altruz_message=message, msg_text="《AltruZ》\n\nRepository》[Here](https://github.com/TeamAltruZ/AltruZ)\nString Session》[Here](https://repl.it/@AkshatKumar6/AltruZ)\nSupport》[Group](https://t.me/AltruZChat)\nSupport》[Channel](https://t.me/TheAltruz)\n\nThis is the Best Userbot to Manager your Telegram Account!")
