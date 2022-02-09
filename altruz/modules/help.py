@@ -11,10 +11,9 @@ from altruz.core.main_cmd import altruz_on_cmd, e_or_r
 HELP.update(
     {
         "**⚡ Userbot**": "`alive`, `installer`, `updater`, `repo`",
-        "**🔥 Animations": "`greetings`",
         "**👨‍💻 Dev**": "`eval`",
-        "**🗂 Modules**": "`paste`, `short_url`, `search`, `pictools`, `arq`, `telegraph`, `cloud`",
-        "**📂 Database**": "`stickers`, `owner`, `sudos`, `afk`, `globals`, `groups`",
+        "**🗂 Modules**": "`paste`, `short_url`, `search`, `arq`, `telegraph`",
+        "**📂 Database**": "`owner`, `sudos`, `afk`, `groups`",
         "\n**Usage**": "`.help` [module_name]"
     }
 )
